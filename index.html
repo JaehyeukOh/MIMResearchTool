@@ -1,0 +1,166 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel='icon' href='icon.jpg' type='image/png' />
+	<title>대화 기록 익명화 및 전송 도구</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="Stylesheet" href="css/bootstrap.css" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		body {
+			padding-top:60px;
+		}
+		.divtitle {
+			font-family: 'Raleway', sans-serif;		
+			font-weight: 700;
+			font-size: 15px;
+			color: #222;
+			border-bottom: 2px solid #D2D2D2;
+			line-height: 190%;
+			text-align: left;
+		}
+		.divdescription {
+			font-family: 'Raleway', sans-serif;		
+			font-weight: 400;
+			font-size: 15px;
+			color: #444;
+			line-height: 100%;
+			text-align: left;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.divdescription-2 {
+			font-family: 'Raleway', sans-serif;		
+			font-weight: 400;
+			font-size: 10px;
+			color: #888;
+			line-height: 100%;
+			text-align: left;
+			padding-left: 40px;
+			padding-right: 20px;
+		}
+		.divcaution {
+			font-family: 'Raleway', sans-serif;		
+			font-weight: 400;
+			font-size: 10px;
+			color: #CC0000;
+			line-height: 100%;
+			text-align: center;
+		}
+		.divcontent {
+			text-align: center;
+			border: 1px solid #D2D2D2;
+		}
+		.divabout {
+			font-family: 'Raleway', sans-serif;		
+			font-weight: 400;
+			font-size: 12px;
+			color: #444;
+			line-height: 100%;
+			text-align: right;
+			padding-left: 20px;
+			padding-right: 20px;
+		}		
+	</style>
+	<link rel="Stylesheet" href="css/bootstrap-responsive.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link type="text/css" href="css/helperstyle.css" rel="stylesheet" />
+</head>
+<body>	
+<div class="container" id="dropfiles" ondragover="return false">
+	<div class="intro-group">
+		<p class="divtitle">대화 기록 익명화 및 전송 도구</p>
+		<p></p>
+		<div class="divcontent introduce-drop">
+			<br>
+				<div class="input">
+					<input class="goto-button" type="button" style="height:75px;width:300px" value="모바일 메신저 사용조사 실험 페이지로 가기"></input>
+				</div>
+			<br>
+			<p class="divdescription">1. 이 도구는 데스크탑에서만 사용가능합니다.</p>
+			<br>
+			<p class="divdescription">2. 이 창에 카카오톡이나 라인에서 제공하는 '대화기록 내보내기' 기능을 통해 얻은 대화 기록을 Drop 하면, 익명화 결과를 확인할 수 있습니다.</p>
+			<br>
+			<form enctype="multipart/form-data">
+				<p class="divdescription">3. 파일 선택 버튼으로 대화 기록 파일을 선택하여 익명화할 수도 있습니다.</p>
+			  <input class="convert-filename" name="file" type="file" />
+			</form>
+			<br>
+			<p class="divdescription">익명화 결과 확인 후, 실험을 위한 대화 전송 혹은 전송 불가 여부를 선택해주세요.</p>
+			<br>
+			<p class="divdescription">서울대학교 UXLAB 은 개인정보보호 및 관리에 최선을 다하고 있습니다.</p>
+			<br>
+		</div>
+		<div class="divcontent">
+			<div class="commit-group">
+				<br>
+				<p class="divdescription">아래 텍스트박스에 이름을 입력 후 전송 버튼을 누르면 변환 결과를 저장하고, 실험합니다.</p>		
+				<div class="input">
+					<input class="commit-text" type="text" style="height:30px;width:300px" value=""></input>
+				</div>
+				<div class="input">
+					<input class="commit-button" type="button" style="height:100px;width:300px" value="실험에 동의하며 아래 내용을 전송합니다."></input>
+				</div>
+			</div>
+			<div class="thanks-group">
+				<br>
+				<p class="divdescription">실험에 참여해 주셔서 감사합니다.</p>		
+				<br>
+			</div>			
+			<div class="results-group">
+				<p class="divdescription">변환 결과는 아래와 같습니다.</p>		
+				<br>
+			</div>
+			<p class="converted-content divdescription" style="text-align: left;"></p>
+		</div>
+	</div>
+	<br><br>		
+	<div class="about-group">
+		<p class="divtitle">About</p>
+		<p></p>
+		<div class="divcontent">
+			<br>
+			<p class="divabout">연구책임자: 서울대학교 융합기술대학원 UXLAB 오재혁연구원</p>
+			<p class="divabout">Tel: 010-3344-7701</p>
+			<p class="divabout">Email: <a href="mailto:heyday99@snu.ac.kr" target="_blank">heyday99@snu.ac.kr</a></p>
+			<p class="divabout">Facebook: <a href="http://www.facebook.com/jaehyeuk" target="_blank">http://www.facebook.com/jaehyeuk</a></p>
+			<br>
+			<p class="divabout">서울대학교 융합기술대학원 UXLAB 이중식교수</p>
+			<p class="divabout">Email: <a href="mailto:joonlee8@snu.ac.kr" target="_blank">joonlee8@snu.ac.kr</a></p>
+		</div>
+		<br>
+	</div>
+</div>
+  <script src="js/index.js"></script>
+	<script>
+	$(".goto-button").click(function() {
+		window.location.href = "http://ix.snu.ac.kr/~iot/survey/";
+	});	
+	
+	$(".commit-button").click(function() {
+		if ($(".commit-text").val().length == 0)
+			return;
+		console.log($(".commit-text").val());
+		$.post("./js/commitResult.php",{
+			key : $(".commit-text").val(), 
+			data : $('.converted-content').html()
+		},function(data){		
+			$('.commit-group').hide();		
+			$('.thanks-group').show();		
+		});
+	});	
+	
+	$(document).ready(function() {	
+		// scroll to top
+		$('.commit-group').hide();
+		$('.thanks-group').hide();		
+		$('.results-group').hide();		
+	});	
+	</script>
+</body>
+</html>

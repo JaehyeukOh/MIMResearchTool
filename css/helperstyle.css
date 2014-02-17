@@ -1,0 +1,291 @@
+
+.content {
+	width:800px;
+	margin:0px auto;
+	text-align:center;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
+}
+
+#drop-files {
+  margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#FbLoginButton {
+	height: 100px;
+}
+
+// force graph
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #aaaaaa;
+  stroke-opacity: .1;
+}
+
+// table
+.plrow, .cell { height: 20px; }
+.plrow  { 
+	clear: left; 
+	text-align: center; 
+}
+.cell { 
+	margin-left:1px;
+	margin-top:5px;
+	display:block; float: left; overflow: hidden; white-space: nowrap; width: 100px; 
+}
+.cell button {
+	font-family: 'Raleway', sans-serif;		
+	font-weight: 400;
+	text-align: center;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+.sfriendName {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	font-size:12px;
+	height:20px;
+	line-height:110%;
+	text-align:left;
+}
+.sfriendImg {
+	width:20px;
+	height:20px;
+}
+
+// graph
+.legend {
+  font: 5px sans-serif;
+}
+
+.stat-graph {
+  font: 8px sans-serif;
+	height:500px;  
+}
+
+.axis path,
+.axis line {
+  font: 8px sans-serif;
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.dot {
+  stroke: #000;
+}
+
+
+// table1
+table.table1{
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 6px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+}
+.table1 thead th{
+    font-size: 6px;
+		text-align:center;
+    padding:15px;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th.headercol{
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tbody th{
+    font-size: 6px;
+    color:#fff;
+    text-align:center;
+    text-shadow:1px 1px 1px #568F23;
+    background-color:#9DD929;
+    border:1px solid #93CE37;
+    border-right:3px solid #9ED929;
+    padding:0px 10px;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.02, rgb(158,217,41)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(123,192,67))
+        );
+    background: -moz-linear-gradient(
+        left bottom,
+        rgb(158,217,41) 2%,
+        rgb(139,198,66) 51%,
+        rgb(123,192,67) 87%
+        );
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.table1 tbody td{
+    font-size: 6px;
+    padding:10px;
+    text-align:center;
+    background-color:#DEF3CA;
+    border: 1px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+
+/*  
+http://www.freshdesignweb.com/beautiful-image-hover-effects-with-jquery-css.html 
+*/
+.freshdesignweb a:link{text-decoration:none;}
+.freshdesignweb article{ float:left; width:160px; height:160px; } /*cursor:pointer;opacity:0.5;*/
+/*portfolio*/
+.fdw-background{ background-color:rgba(0,0,0,0.6);opacity:0; margin-top:-10px; width:100%; height:100%; }
+.fdw-background h4{
+	font-family: 'Raleway', sans-serif;		
+	font-weight: 700;
+	font-size: 15px;
+	text-align:center; padding:40px 0px 0; 
+}
+.fdw-background p{
+	font-family: 'Raleway', sans-serif;		
+	font-weight: 400;
+	font-size: 10px;
+	text-align:left; padding-left:5px;
+	line-height:12px;
+	color:red;
+}
+.fdw-background p a{
+	font-family: 'Raleway', sans-serif;		
+	font-weight: 400;
+	font-size: 10px;
+	text-align:left; padding-left:5px;
+	line-height:12px;
+	color:#FFF;
+}
+.fdw-background .fdw-port{ text-align:center; padding:0 40px 0; }
+.fdw-background .fdw-port a{ padding:8px 15px; font-size:1em; }
+/*subtitle*/
+.fdw-subtitle{ font-size:0.8em; margin-top:0px; color:#FFF; }
+.fdw-subtitle a{ color:#FFF; }
+/*border*/
+.border{ border:1px solid #CCC; margin:-1px;}
+/*link buttons*/
+
+.kakao-button {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFB1F), to(#EBE70C));
+    border-radius: 5px;
+    width:280px;
+    height:40px;
+    box-shadow: rgba(0, 0, 0, 0.496094) 0px 1px 1px 0px, rgba(0, 0, 0, 0.0976563) 0px -1px 0px 0px;
+    border:0px;
+    font-size:1.25em;
+    text-align: center;
+    line-height: 40px;
+    margin:0px auto;
+}
+
+.kakao-button:hover {
+	background: -moz-linear-gradient(top, #EBE70C, #FFFB1F);
+	background: -ms-linear-gradient(top, #EBE70C, #FFFB1F);
+	background: -webkit-linear-gradient(top, #EBE70C, #FFFB1F);
+    
+}
+
+.facebook-button {
+		background-color: #2b4170; /* fallback color */
+		background: -moz-linear-gradient(top, #3b5998, #2b4170);
+		background: -ms-linear-gradient(top, #3b5998, #2b4170);
+		background: -webkit-linear-gradient(top, #3b5998, #2b4170);
+		border: 1px solid #2b4170;
+		text-shadow: 0 -1px -1px #1f2f52;
+
+    border-radius: 5px;
+    width:280px;
+    height:40px;
+    font-size:14px;
+    color:#FFF;
+    text-align: center;
+    line-height: 40px;
+    margin:0px auto;
+}
+
+.facebook-button:hover {
+	background: -moz-linear-gradient(top, #2b4170, #3b5998);
+	background: -ms-linear-gradient(top, #2b4170, #3b5998);
+	background: -webkit-linear-gradient(top, #2b4170, #3b5998);
+}
+
+.apphome-button {
+		background-color: #E1E1E9; /* fallback color */
+		background: -moz-linear-gradient(top, #F2F3F8, #E1E1E9);
+		background: -ms-linear-gradient(top, #F2F3F8, #E1E1E9);
+		background: -webkit-linear-gradient(top, #F2F3F8, #E1E1E9);
+		border: 1px solid #D7DADD;
+		text-shadow: 0 -1px -1px #D7DADD;
+
+    border-radius: 5px;
+    width:280px;
+    height:40px;
+    font-size:14px;
+    color:#000;
+    text-align: center;
+    line-height: 40px;
+    margin:0px auto;
+}
+
+.apphome-button:hover {
+	background: -moz-linear-gradient(top, #E1E1E9, #F2F3F8);
+	background: -ms-linear-gradient(top, #E1E1E9, #F2F3F8);
+	background: -webkit-linear-gradient(top, #E1E1E9, #F2F3F8);
+}
+
